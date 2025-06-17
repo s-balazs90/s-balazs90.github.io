@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    max-resolution: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(234, 255, 127);
+}
+
+h1 {
+    background-color: rgb(125, 207, 129);
+    padding: 5px;
+}
+
+p {
+    padding: 20px;
+}
