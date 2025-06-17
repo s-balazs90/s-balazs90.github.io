@@ -1,3 +1,8 @@
 body {
     background-color: aquamarine;
 }
+
+h1 {
+    background-color: aliceblue;
+    padding: 5px;
+}
