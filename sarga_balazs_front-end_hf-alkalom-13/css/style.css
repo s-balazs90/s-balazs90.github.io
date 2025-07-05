@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.container {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #ddd;
+    background-color: #d7b520;
+    border-radius: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+        "header header header header"
+        "aside section-1 section-1 section-1"
+        "aside section-2 section-2 section-2"
+        "aside section-3 section-3 section-3"
+        "footer footer footer footer"
+}
+
+section h2 {
+    font-size:1.2 em;
+}
+
+h2, p {
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    border: 2px solid #ddd;
+    background-color: #e7e6e6;
+    border-radius: 10px;
+}
+
+header img {
+    display: block;
+    object-fit:fill;
+    
+    object-position: 50% 100%;
+    width: 100%;
+    height: 250px;
+}
+
+aside {
+    grid-area: aside;
+    width: auto;
+    border: 2px solid #ddd;
+    background-color: #5b9bd5;
+    border-radius: 10px;
+}
+
+/*aside-menu*/
+nav {
+    z-index: 1000;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+/*aside-menu end*/
+
+div.form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+legend {
+    color: white;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    color: white;
+}
+
+.form-paragraph {
+    color: white;
+}
+
+.section-1 {
+    grid-area: section-1;
+    border: 2px solid #ddd;
+    background-color: #fbe5d6;
+    border-radius: 10px;
+}
+
+.section-2 {
+    grid-area: section-2;
+    border: 2px solid #ddd;
+    background-color: #fff2cc;
+    border-radius: 10px;
+}
+
+.section-3 {
+    grid-area: section-3;
+    border: 2px solid #ddd;
+    background-color: #deebf7;
+    border-radius: 10px;
+}
+
+.section-picture {
+    float: right;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    grid-area: footer;
+    border: 2px solid #ddd;
+    background-color: #e7e6e6;
+    border-radius: 10px;
+}
