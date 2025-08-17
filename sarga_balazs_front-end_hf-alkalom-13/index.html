@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Balaton, a Tisza-tó és a Szelidi-tó</title>
+    <meta property="og:title" content="A Balaton, a Tisza-tó és a Szelidi-tó" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="../sarga_balazs_front-end_hf-alkalom-13/img/badacsony.jpeg" />
+    <meta property="og:description"
+        content="Balaton, Tisza-tó és Szelidi-tó szállásajánlatai egy helyen! Fedezze fel a legjobb pihenési lehetőségeket és élvezze a vízparti élményeket." />
+    <link rel="stylesheet" href="../sarga_balazs_front-end_hf-alkalom-13/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+    <header class="header">
+        <img src="../sarga_balazs_front-end_hf-alkalom-13/img/badacsony.jpeg" alt="Badacsonyi látkép">
+    </header>
+    <aside class="aside">
+        <nav>
+            <ul>
+                <li><a href="#balaton">Balaton</a></li>
+                <li><a href="#tisza">Tisza-tó</a></li>
+                <li><a href="#szelidi">Szelidi-tó</a></li>
+            </ul>
+        </nav>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Kérem töltse ki a jelentkezési űrlapot</legend>
+                <label for="nev">Név:</label>
+                <input id="nev" type="text" name="username" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email" required>
+                <br>
+                <label for="phone">Telefonszám:</label>
+                <input id="phone" type="number" name="phone" required>
+                <br>
+                <label for="lakes">Melyik tó érdekli</label>
+                <select name="lakes" id="lakes" required>
+                    <option value=""></option>
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza">Tisza-tó</option>
+                    <option value="szelidi">Szelidi-tó</option>
+                </select>
+                <br>
+                <p class="form-paragraph">Milyen szállást keres?</p>
+                <div class="form">
+                    <label><input type="checkbox" name="accomodation" value="hotel">Hotel</label>
+                    <label><input type="checkbox" name="accomodation" value="apt">Apartmanház</label>
+                    <label><input type="checkbox" name="accomodation" value="camp">Kemping</label>
+                </div>
+                <br>
+                <label for="cathering">Milyen ellátás legyen?</label>
+                <select name="cathering" id="cathering" required>
+                    <option value=""></option>
+                    <option value="full">teljes</option>
+                    <option value="half">fél panzió</option>
+                    <option value="breakfast">csak reggeli</option>
+                    <option value="none">nem kérek ellátást</option>
+                </select>
+                <br>
+                <label for="message">Üzenet a szállásadónak:</label><br>
+                <textarea name="message" id="message" rows="5" cols="40" maxlength="600"> </textarea>
+                <br>
+                <input type="submit" value="Mehet">
+            </fieldset>
+        </form>
+    </aside>
+    <section id="balaton" class="section-1">
+        <h2><em>A Balaton - A magyar tenger</em></h2>
+        <p>
+            A Balaton Magyarország legnagyobb tava, egyben Közép-Európa legnagyobb édesvizű tava. Hatalmas mérete és
+            kulturális jelentősége miatt sokan csak "magyar tengerként" emlegetik. A tó hossza körülbelül 77 kilométer,
+            míg a legnagyobb szélessége eléri a 14 kilométert is. A Balaton különösen népszerű nyaralóhely, hiszen a
+            déli part sekély vizének köszönhetően ideális a kisgyermekes családok számára is.
+            <img class="section-picture" src="../sarga_balazs_front-end_hf-alkalom-13/img/balaton-section-1.jpg"
+                alt="Kép a Balatonról">
+            Az északi part más jellegű élményeket kínál: itt emelkednek a Badacsony vulkanikus hegyei, valamint híres
+            borvidékek találhatók, amelyek kiváló minőségű nedűket kínálnak az idelátogatóknak. A tó körül számos híres
+            város sorakozik, mint például Siófok, Balatonfüred, Keszthely és Tihany. Utóbbi különösen népszerű az
+            apátságáról és levendulamezőiről.
+
+            A Balaton nemcsak a fürdőzés szerelmeseinek kedvez, hanem ideális helyszín vitorlázáshoz, horgászathoz és
+            kerékpározáshoz is. A vízminőség kiváló, rendszeres ellenőrzések biztosítják a fürdőzők biztonságát. A
+            Balaton és környéke egész évben változatos programokat és kikapcsolódási lehetőségeket kínál minden
+            korosztály számára.
+        </p>
+    </section>
+    <section id="tisza" class="section-2">
+        <h2><em>A Tisza-tó - A természet szerelmeseinek paradicsoma</em></h2>
+        <p>A Tisza-tó Magyarország második legnagyobb tava, mesterséges eredetű, de természetes szépségei révén igazi
+            természeti kincsnek számít. A 127 négyzetkilométeres vízfelület a Tisza folyó szabályozása révén jött létre,
+            de mára önálló ökoszisztémával rendelkezik. A tó környéke gazdag élővilággal büszkélkedhet, különösen a
+            madármegfigyelők és horgászok körében népszerű.
+            <img class="section-picture" src="../sarga_balazs_front-end_hf-alkalom-13/img/tisza-to-section-2.jpg"
+                alt="Kép a Tisza-tóról">
+            A Tisza-tó partvidéke kiváló lehetőséget kínál vízi sportokra, strandolásra és túrázásra egyaránt. Az itt
+            található ártéri erdők, holtágak és nádasok rendkívül változatos élőhelyeket biztosítanak. A Tisza-tavi
+            Ökocentrum Poroszlón látványos módon mutatja be a térség élővilágát és ökológiai értékeit. A tó körül
+            kiépített kerékpárút lehetővé teszi a természet közvetlen felfedezését.
+
+            A Tisza-tó különlegessége, hogy egyszerre kínál aktív kikapcsolódást és nyugalmat azoknak, akik távol
+            akarnak lenni a tömegturizmustól. Az egyre népszerűbb vízi túrák során a látogatók csendes csatornákon,
+            vadregényes vízi világban evezhetnek. A vízminőség folyamatosan ellenőrzött, a strandok tiszták és
+            családbarátok.
+        </p>
+    </section>
+    <section id="szelidi" class="section-3">
+        <h2><em>A Szelidi-tó - A Duna menti gyöngyszem</em></h2>
+        <p>A Szelidi-tó a Duna közelében, Bács-Kiskun vármegyében található, és egyike Magyarország természetes eredetű
+            szikes tavainak. Bár mérete jóval kisebb, mint a Balatoné vagy a Tisza-tóé, különleges hangulata és tiszta
+            vize miatt kedvelt nyaralóhely a régióban. A tó környezete védett természeti terület, értékes élővilággal és
+            sajátos ökológiai adottságokkal.
+            <img class="section-picture" src="../sarga_balazs_front-end_hf-alkalom-13/img/szelidi-to-section-3.jpg"
+                alt="Kép a Szelidi-tóról">
+            A tó vizének enyhén sós jellege és magas ásványianyag-tartalma miatt gyógyhatásúnak tartják. A partján több
+            kiépített strand is található, így ideális hely a nyugodt fürdőzésre és napozásra. A tó sekély vizének
+            köszönhetően gyorsan felmelegszik, ezért már a tavaszi hónapoktól is alkalmas fürdésre.
+
+            A környék kiváló lehetőséget kínál kerékpározásra, sétára és természetjárásra. A Szelidi-tó partján évente
+            megrendezett nyári programok - például koncertek, sportversenyek és kézműves vásárok - egyre több látogatót
+            vonzanak. A tó melletti üdülőövezet csendes, családias hangulatú, ami különösen vonzó azoknak, akik
+            nyugalomra vágynak.
+
+            Bár kevésbé ismert, mint a nagyobb tavaink, a Szelidi-tó valódi kincs azok számára, akik természetközeli
+            kikapcsolódásra vágynak.
+        </p>
+    </section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/?locale=hu_HU" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://mail.google.com/mail" target="_blank" class="fa fa-google"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
