@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üdvözöllek a túrázás világában!</title>
+  <meta property="og:title" content="Üdvözöllek a túrázás világában!" />
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="img/home-img-2.jpg" />
+  <meta property="og:description"
+    content="Fedezd fel a lenyűgöző ösvényeket, és szerezd be a megfelelő felszerelést a kalandjaidhoz! Nézd meg a túrafelszerelésekre és kiegészítőkre vonatkozó ajánlásokat, hogy felejthetetlenné tedd a túrádat." />
+  <link rel="stylesheet" href="../sarga-balazs-janos-front-end_vizsgamunka/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="../sarga-balazs-janos-front-end_vizsgamunka/img/favicon-hiking.png">
+</head>
+
+<body class="body">
+  <div class="home-container">
+    <div class="home-nav">
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/index.html">Főoldal</a></li>
+          <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/hikes.html">Túraajánlók</a></li>
+          <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/gear.html">Felszerelés</a></li>
+          <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/gallery.html">Galéria</a></li>
+          <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/contact.html">Kapcsolat</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+    <div class="div-stacking-section">
+      <h1>Üdvözöllek a túrázás világában!</h1>
+      <p>Üdvözöllek a túrázás világában! Ez a weboldal azoknak szól, akik szeretnék jobban megismerni a
+        természetet,
+        kiszakadni a hétköznapok rohanásából, és élményeket gyűjteni az erdők, hegyek és völgyek között. A
+        túrázás
+        nemcsak fizikai kikapcsolódás, hanem lelki feltöltődés is: segít lelassítani, megfigyelni a
+        környezetünket,
+        és újra kapcsolatba kerülni önmagunkkal.
+
+        Oldalamon elsősorban saját tapasztalataimat, túraajánlóimat és tanácsaimat osztom meg, kezdőknek és
+        haladóknak egyaránt. Találsz itt részletes túraleírásokat, hasznos felszerelési tippeket, személyes
+        élménybeszámolókat, és egy folyamatosan bővülő túratérképet is.</p>
+    </div>
+    <div class="home-figure">
+      <img src="img/home-img-2.jpg" alt="Hegyek">
+    </div>
+    <div class="hikes" id="hikes-column-1" onclick="noNewTab1()">
+      <img src="img/column-1-hiking-pic.jpg" alt="Egy férfi áll a hegy tetején">
+      <h3>Túraajánlók</h3>
+      <p>Négy rövid túra leírását olvashatod</p>
+    </div>
+    <div class="gear" id="hikes-column-2" onclick="noNewTab2()">
+      <img src="img/column-2-hiking-pic.jpg" alt="Kék tó, és hegy, előtérben fákkal">
+      <h3>Felszerelés</h3>
+      <p>Mit vigyél magaddal. Túraöltözet. Alap elsősegély. Tábori alvás kellékei. Egyéb kiegészítők.</p>
+    </div>
+    <div class="gallery" id="hikes-column-3" onclick="noNewTab3()">
+      <img src="img/column-3-hiking-pic.jpg" alt="Karjait a magasban tartó ember egy hegy tetején">
+      <h3>Galéria</h3>
+      <p>Képgyűjtemény</p>
+    </div>
+    <div class="home-footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <ul class="links">
+            <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/index.html">Főoldal</a></li>
+            <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/hikes.html">Túraajánlók</a></li>
+            <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/gear.html">Felszerelés</a></li>
+            <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/gallery.html">Galéria</a></li>
+            <li><a href="../sarga-balazs-janos-front-end_vizsgamunka/html/contact.html">Kapcsolat</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <div class="icons">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--       <div class="footer-social">
+        <div class="icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Fel</button>
+  <script src="../sarga-balazs-janos-front-end_vizsgamunka/js/main-java.js"></script>
+</body>
+
+</html>
