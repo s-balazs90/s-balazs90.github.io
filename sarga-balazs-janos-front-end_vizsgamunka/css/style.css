@@ -528,7 +528,6 @@ nav li a:hover:after {
   display: none;
   position: fixed;
   z-index: 1;
-  /*   padding-top: 100px; */
   left: 0;
   top: 0;
   width: 100%;
@@ -595,7 +594,6 @@ nav li a:hover:after {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -605,33 +603,10 @@ nav li a:hover:after {
   left: 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-/* img {
-  margin-bottom: -4px;
-} */
-
-/* .demo {
-  opacity: 0.6;
-} */
-
-/* .active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
 
 /*contact-layout*/
 .contact-container {
