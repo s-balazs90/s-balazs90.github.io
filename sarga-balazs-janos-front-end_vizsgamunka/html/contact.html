@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat</title>
+    <meta property="og:title" content="Kapcsolat" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/home-img-2.jpg" />
+    <meta property="og:description"
+        content="Segítségre van szükséged? A kapcsolat oldal lehetővé teszi, hogy egyszerűen üzenj nekünk, és hamarosan válaszolunk!" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +34,23 @@
                     <li><a href="../html/gallery.html">Galéria</a></li>
                     <li><a href="../html/contact.html">Kapcsolat</a></li>
                 </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
+        </div>
+
+        <!--     <div class="contact-figure">
+      <img src="../img/gallery-grid-pic-1.jpg" alt="Hegyek">
+    </div> -->
+
+        <div class="contact-header">
+            <h2>Osszd meg velem kedvenc túrádat!</h2>
+            <p>Szeretnél megosztani egy különleges túraélményt? Van egy titkos útvonal, amit csak te ismersz?
+                Küldd el a kedvenc túrád leírását, és segíts másoknak felfedezni a természet csodáit!
+            </p>
         </div>
 
         <div class="contact-form">
@@ -48,8 +71,9 @@
                 </div>
 
                 <div class=form-group>
-                    <input type="checkbox" id="privacy">
-                    <label for="privacy" class="fine-print"> Az <a href="#">adatkezelési tájékoztatót</a> elolvastam és
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy" class="fine-print"> Az <a href="../html/privacy.html"
+                            target="_blank">adatkezelési tájékoztatót</a> elolvastam és
                         elfogadom</label>
                 </div>
 
@@ -73,23 +97,29 @@
                         <li><a href="../html/contact.html">Kapcsolat</a></li>
                     </ul>
                 </div>
-
-
-            </div>
-
-            <div class="footer-social">
-                <div class="icons">
-                    <i href="https://www.facebook.com/?locale=hu_HU" target="_blank"
-                        class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
+
             </div>
+
+            <!--             <div class="footer-social">
+                <div class="icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div> -->
         </div>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <script src="../sarga-balazs-janos-front-end_vizsgamunka/js/main-java.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Fel</button>
+    <script src="../js/main-java.js"></script>
 </body>
 
 </html>

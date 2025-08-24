@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Túraajánlók</title>
+    <title>Útvonalak részletes leírásokkal</title>
+    <meta property="og:title" content="Útvonalak részletes leírásokkal" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/home-img-2.jpg" />
+    <meta property="og:description"
+        content="Készen állsz, hogy útnak indulj? Nézd meg a Túraajánlókat a legjobb túratippekért, festői útvonalakért és mindenért, amire szükséged van a következő szabadtéri kalandodhoz!" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +27,18 @@
     <div class="hikes-container">
         <div class="hikes-nav">
             <nav class="nav">
-                <ul>
+                <ul class="ul">
                     <li><a href="../index.html">Főoldal</a></li>
                     <li><a href="../html/hikes.html">Túraajánlók</a></li>
                     <li><a href="../html/gear.html">Felszerelés</a></li>
                     <li><a href="../html/gallery.html">Galéria</a></li>
                     <li><a href="../html/contact.html">Kapcsolat</a></li>
                 </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
         </div>
         <div class="hikes-main">
@@ -255,21 +267,28 @@
                         <li><a href="../html/contact.html">Kapcsolat</a></li>
                     </ul>
                 </div>
-
-
-            </div>
-
-            <div class="footer-social">
-                <div class="icons">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
+
             </div>
+
+            <!--             <div class="footer-social">
+                <div class="icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div> -->
         </div>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Fel</button>
     <script src="../js/main-java.js"></script>
 </body>
 
