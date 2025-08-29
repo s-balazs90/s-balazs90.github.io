@@ -444,6 +444,12 @@ nav li a:hover:after {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.9;
+}
+
+.gallery-img:hover {
+  transition: opacity .3s ease-in;
+  opacity: 1;
 }
 
 .gallery-nav {
@@ -508,22 +514,7 @@ nav li a:hover:after {
 
 /*Gallery - Lightbox*/
 
-.row>.column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
+/* Modal background */
 .gallery-modal {
   display: none;
   position: fixed;
@@ -834,38 +825,38 @@ textarea {
 
 
 /*4K breakpoint*/
-@media (min-width: 2560px){
-.gallery-modal-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 15px;
-  padding: 10px;
-}
+@media (min-width: 2560px) {
+  .gallery-modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    padding: 10px;
+  }
 
-.contact-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 0.3fr 0.3fr repeat(2, 1fr);
-  column-gap: 0px;
-  row-gap: 0px;
-}
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 0.3fr repeat(1, 1fr) 0.4fr;
+    column-gap: 0px;
+    row-gap: 0px;
+  }
 
-.contact-nav {
-  grid-area: 1 / 1 / 2 / 6;
-}
+  .contact-nav {
+    grid-area: 1 / 1 / 2 / 6;
+  }
 
-.contact-header {
-  grid-area: 2 / 2 / 3 / 5;
-}
+  .contact-header {
+    grid-area: 2 / 2 / 3 / 5;
+  }
 
-.contact-form {
-  grid-area: 3 / 2 / 4 / 5;
-}
+  .contact-form {
+    grid-area: 3 / 2 / 4 / 5;
+  }
 
-.contact-footer {
-  grid-area: 4 / 1 / 5 / 6;
-}
+  .contact-footer {
+    grid-area: 4 / 1 / 5 / 6;
+  }
 }
 
 /*DESKTOP (992px – 1199px)*/
@@ -1129,6 +1120,15 @@ textarea {
     border-radius: 10px;
   }
 
+  #gear-1,
+  #gear-2,
+  #gear-3,
+  #gear-4,
+  #gear-5,
+  #gear-6 {
+    justify-self: center;
+  }
+
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.3fr (11, 1fr);
@@ -1206,6 +1206,17 @@ textarea {
     height: 8em;
     margin: 15px;
     border-radius: 10px;
+  }
+
+  img.picture-remete-1,
+  img.picture-remete-2,
+  img.picture-remete-3,
+  img.picture-hideg-1,
+  img.picture-hideg-2,
+  img.picture-predi-1,
+  img.picture-lilla-1 {
+    float: none;
+    display: block;
   }
 
   #gear-1,
