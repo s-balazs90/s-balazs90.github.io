@@ -619,7 +619,7 @@ nav li a:hover:after {
 }
 
 .contact-footer {
-  grid-area: 4 / 1 / 5 / 6;
+  grid-area: 5 / 1 / 6 / 6;
 }
 
 /*contact style*/
@@ -839,7 +839,7 @@ textarea {
   }
 
   .contact-footer {
-    grid-area: 5 / 1 / 5 / 6;
+    grid-area: 5 / 1 / 6 / 6;
   }
 }
 
@@ -1015,13 +1015,12 @@ textarea {
   .home-container,
   .hikes-container,
   .gear-container,
-  .contact-container,
-  .blog-container {
+  .contact-container {
     width: 100%;
     padding: 0;
   }
 
-  /*Hamburger menü */
+  /*Hamburger menu */
   .hamburger {
     display: flex;
     flex-direction: column;
