@@ -105,7 +105,6 @@ nav li a:hover:after {
 .home-figure {
   grid-area: 2 / 3 / 4 / 6;
 
-
   img {
     max-inline-size: 80%;
     display: block;
@@ -276,8 +275,7 @@ nav li a:hover:after {
 .gear-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
-  grid-template-rows: 0.4fr 0.3fr repeat(5, 1fr);
+  grid-template-rows: 0.4fr 0.3fr repeat(4, 1fr) 0.5fr;
   column-gap: 0px;
   row-gap: 0px;
 }
@@ -603,7 +601,7 @@ nav li a:hover:after {
 .contact-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 0.2fr 0.2fr repeat(1, 1fr) 0.2fr;
+  grid-template-rows: 0.3fr 0.4fr 1fr 0.4fr 0.3fr;
   column-gap: 0px;
   row-gap: 0px;
 }
@@ -626,6 +624,7 @@ nav li a:hover:after {
 
 /*contact style*/
 .contact-header h2 {
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -651,7 +650,6 @@ label {
   text-transform: revert;
   line-height: 1.4;
 }
-
 
 .contact-form {
   background-image: url("../img/contact-form-pic.jpg");
@@ -698,7 +696,6 @@ label {
   text-transform: uppercase;
   font-size: 1rem;
   color: whitesmoke;
-
 }
 
 .fine-print {
@@ -724,7 +721,6 @@ button {
 
 textarea {
   width: 100%;
-
 }
 
 /*Footer*/
@@ -736,18 +732,6 @@ textarea {
   background-color: #002039;
 }
 
-.footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1280px;
-  width: 95%;
-  background: #002039;
-  border-radius: 6px;
-
-}
-
 .footer-row {
   display: flex;
   flex-direction: row;
@@ -755,7 +739,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 3.5rem;
-  padding: 60px;
+  padding: 20px;
 }
 
 .footer-social {
@@ -765,7 +749,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 3.5rem;
-  padding: 60px;
+  padding: 20px;
 }
 
 .footer-col .links {
@@ -837,7 +821,7 @@ textarea {
   .contact-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 0.3fr 0.3fr repeat(1, 1fr) 0.4fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 0.5fr 0.5fr;
     column-gap: 0px;
     row-gap: 0px;
   }
@@ -855,7 +839,7 @@ textarea {
   }
 
   .contact-footer {
-    grid-area: 4 / 1 / 5 / 6;
+    grid-area: 5 / 1 / 5 / 6;
   }
 }
 
@@ -924,7 +908,7 @@ textarea {
   .gear-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 0.3fr 0.2fr repeat(7, 1fr);
+    grid-template-rows: 0.3fr 0.2fr repeat(6, 1fr) 0.5fr;
     column-gap: 0px;
     row-gap: 0px;
   }
